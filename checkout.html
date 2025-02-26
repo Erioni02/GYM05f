@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Pagesa në Cash</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="checkout-container">
+        <h1>Checkout</h1>
+        <form action="process-form.php" method="post">
+            <div class="form-group">
+                <label for="emri">Emri:</label>
+                <input type="text" id="emri" name="emri"  required>
+                
+            </div>
+            <div class="form-group">
+                <label for="mbiemri">Mbiemri:</label>
+                <input type="text" id="mbiemri" name="mbiemri" required>
+            </div>
+            <div class="form-group">
+                <label for="qyteti">Qyteti:</label>
+                <input type="text" id="qyteti" name="qyteti" required>
+            </div>
+            <div class="form-group">
+                <label for="telefoni">Numri i Telefonit:</label>
+                <input type="tel" id="telefoni" name="telefoni" required>
+            </div>
+            <div class="form-group">
+                <label for="produkti">Produkti:</label>
+                <select id="produkti" name="produkti" required>
+                    <option value="">Zgjidhni produktin</option>
+                    <option value="produkt1">Produkti 1</option>
+                    <option value="produkt2">Produkti 2</option>
+                    <option value="produkt3">Produkti 3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p><strong>Pagesa:</strong> Në Cash</p>
+            </div>
+            <button type="submit">Blej Tani</button>
+        </form>
+    </div>
+
+ 
+</body>
+</html>
